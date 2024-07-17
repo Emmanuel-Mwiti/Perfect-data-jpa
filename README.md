@@ -39,3 +39,11 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 ##### b.) the inverse of the relationship( does not have fk in the join table)
 
 ##### i.e Course is owner and Author is the inverse relationship.
+
+#### SPRING DATA JPA INHERITANCE STRATEGIES
+![Inheritance](images/inheritance.png)
+##### *1. Single Table Strategy.*
+##### *2. Join Table Strategy.*- this is complex
+##### *3. Table per class Strategy.*
+
+#### COMPOSITION OVER INHERITANCE TO AVOID RIGIDITY.

@@ -1,23 +1,22 @@
 package io.github.emmanuelmwiti.springjpa.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @Entity
 //@Table(name = "authors")
-public class Author {
+public class Author extends BaseEntity {
 
-    @Id
-    @GeneratedValue
+//    @Id
+//    @GeneratedValue
             /*(
                     strategy = GenerationType.TABLE,
                     generator = "author_id_gen")
@@ -32,7 +31,7 @@ public class Author {
             sequenceName = "author_sequence",
             allocationSize = 1,
             initialValue = 10)*/
-    private Integer id;
+//    private Integer id;
     private String firstName;
     private String lastName;
 
