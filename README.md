@@ -2,6 +2,7 @@
 Spring boot data JPA
 
 ## Course MUST have an author but not necessarily for an author to a course.
+### HikariCP is a high-performance JDBC connection pool for Java.
 Many to many relationship but with a mandatory Course to Author but not vice-versa.
 
 The first image is an ERD (Entity-Relationship Diagram) for the overall project.
