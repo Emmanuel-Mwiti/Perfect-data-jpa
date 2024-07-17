@@ -1,13 +1,12 @@
-#spring.application.name=springjpa
 spring:
   application:
     name: springjpa
   datasource:
-    url: localhost
+    url: jdbc:mysql://localhost:3306/perfectjpa
     username: root
     password: 5168
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     show-sql: true
