@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -33,6 +35,14 @@ public class Author {
     private Integer id;
     private String firstName;
     private String lastName;
+
+    @Column(
+            unique = true,
+            nullable = false
+    )
     private String email;
     private int age;
+
+    @ManyToMany(mappedBy = "authors")
+    private List<Course> courses;
 }

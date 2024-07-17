@@ -34,4 +34,8 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 #### 1. DATA ACCESS NEEDS- If you frequently need to navigate the relationship from both sides, use bidirectional. If access is primarily one-sided, use unidirectional
 #### 2. Bidirectional relationship might be complex to maintain, potential performance overhead- additional joins. Uni directional where bi is unnecessary.
 
+#### In ManyToMany relationship, we have 
+##### a.) the owner of the relationship(who is responsible for maintaining the fk in the join table)
+##### b.) the inverse of the relationship( does not have fk in the join table)
 
+##### i.e Course is owner and Author is the inverse relationship.
