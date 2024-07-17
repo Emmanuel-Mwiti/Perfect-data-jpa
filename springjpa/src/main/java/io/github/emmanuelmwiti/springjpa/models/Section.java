@@ -6,17 +6,20 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
-@EqualsAndHashCode(callSuper = true)
+//@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+//@SuperBuilder
+@Builder
 @Entity
-public class Section extends BaseEntity {
+public class Section
+//        extends BaseEntity
+{
 
-//    @Id
-//    @GeneratedValue
-//    private Integer id;
+    @Id
+    @GeneratedValue
+    private Integer id;
     private String name;
     private int sectionOrder;
 

@@ -4,17 +4,20 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
-@EqualsAndHashCode(callSuper = true)
+//@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+//@SuperBuilder
+@Builder
 @Entity
-public class Lecture extends BaseEntity {
+public class Lecture
+//        extends BaseEntity
+{
 
-//    @Id
-//    @GeneratedValue
-//    private Integer id;
+    @Id
+    @GeneratedValue
+    private Integer id;
     private String name;
 
     @ManyToOne

@@ -43,6 +43,9 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 #### SPRING DATA JPA INHERITANCE STRATEGIES
 ![Inheritance](images/inheritance.png)
 ##### *1. Single Table Strategy.*
+-> All sub classes are mapped to the same table. Then discriminatory column is used to distinguish between different subclasses.
+-> All the properties of parent entity class and its sub classes will be persisted into a single table.
+-> Best suited for small classes because makes the code loong.
 ##### *2. Join Table Strategy.*- this is complex
 ##### *3. Table per class Strategy.*
 

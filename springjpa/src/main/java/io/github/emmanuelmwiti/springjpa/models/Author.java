@@ -6,17 +6,19 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
-@EqualsAndHashCode(callSuper = true)
+//@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@SuperBuilder
+@Builder
 @Entity
 //@Table(name = "authors")
-public class Author extends BaseEntity {
+public class Author
+//        extends BaseEntity
+{
 
-//    @Id
-//    @GeneratedValue
+    @Id
+    @GeneratedValue
             /*(
                     strategy = GenerationType.TABLE,
                     generator = "author_id_gen")
@@ -31,7 +33,7 @@ public class Author extends BaseEntity {
             sequenceName = "author_sequence",
             allocationSize = 1,
             initialValue = 10)*/
-//    private Integer id;
+    private Integer id;
     private String firstName;
     private String lastName;
 
