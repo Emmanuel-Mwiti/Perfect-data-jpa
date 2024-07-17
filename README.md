@@ -29,3 +29,9 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 ![JPA, Spring Data, and Hibernate](images/entity_life_cycle.png)
 *Entity life Cycle for JPA dml transactions.*
 
+#### UNI AND BI DIRECTIONAL RELATIONSHIP
+
+#### 1. DATA ACCESS NEEDS- If you frequently need to navigate the relationship from both sides, use bidirectional. If access is primarily one-sided, use unidirectional
+#### 2. Bidirectional relationship might be complex to maintain, potential performance overhead- additional joins. Uni directional where bi is unnecessary.
+
+
