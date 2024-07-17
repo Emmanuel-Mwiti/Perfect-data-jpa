@@ -47,6 +47,12 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 -> All the properties of parent entity class and its sub classes will be persisted into a single table.
 -> Best suited for small classes because makes the code loong.
 ##### *2. Join Table Strategy.*- this is complex
+-> Each sub class will have its onw table.
+-> During insertion it will also insert twice, the sub class and parent.
 ##### *3. Table per class Strategy.*
+-> Each concrete sub class is mapped to a separate class.
+-> i.e that is we will have a table video with all the resources elements. Own table with a copy of everything from the parent class.
+-> Can lead to efficient queries but many tables on the schema making it complex.
+-> Preferred when you have fewer classes.
 
 #### COMPOSITION OVER INHERITANCE TO AVOID RIGIDITY.
