@@ -1,6 +1,5 @@
 package io.github.emmanuelmwiti.springjpa;
 
-import io.github.emmanuelmwiti.springjpa.models.Author;
 import io.github.emmanuelmwiti.springjpa.models.Video;
 import io.github.emmanuelmwiti.springjpa.repositories.AuthorRepository;
 import io.github.emmanuelmwiti.springjpa.repositories.VideoRepository;
