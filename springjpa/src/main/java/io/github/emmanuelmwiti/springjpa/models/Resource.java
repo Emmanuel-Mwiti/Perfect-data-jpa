@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 //@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //Inheritance
 //@Inheritance(strategy = InheritanceType.JOINED)
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-//@DiscriminatorColumn(name = "resource_type") // distincts each entity in sub class. It is used only with single table
+//@DiscriminatorColumn(name = "resource_type") // distinct each entity in subclass. It is used only with single table
 public class Resource
 //        extends BaseEntity
 {

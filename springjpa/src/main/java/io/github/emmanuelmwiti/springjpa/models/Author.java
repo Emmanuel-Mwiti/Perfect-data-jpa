@@ -6,16 +6,20 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
-//@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+//@Builder
+@SuperBuilder
 @Entity
 //@Table(name = "authors")
+@NamedQuery(
+        name = "Author.findByNamedQuery",
+        query = "select a from Author a where a.age>=:age"
+)
 public class Author
-//        extends BaseEntity
-{
+        extends BaseEntity {
 
     @Id
     @GeneratedValue

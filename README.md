@@ -56,3 +56,16 @@ The first image is an ERD (Entity-Relationship Diagram) for the overall project.
 -> Preferred when you have fewer classes.
 
 #### COMPOSITION OVER INHERITANCE TO AVOID RIGIDITY.
+
+
+#### NAMED QUERIES.
+1. Reusable.
+2. Optimize performance- they are passed and optimized during application startup.
+3. They are centralized- query in one place. Cheaper to maintain.
+   ###### NAMED QUERIES USE CASES:
+      1. Complex queries that are use in multiple places throughout the application.
+      2. Optimize performance for frequently executed queries.
+      3. Maintaining code readability by separating query definition from other application logic.
+      4. You need tendered way of managing and organizing queries across your application.
+
+- Evaluate your specific use case especially for varying conditions.

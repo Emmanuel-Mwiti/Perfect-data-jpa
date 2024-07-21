@@ -19,7 +19,7 @@ import org.hibernate.annotations.PolymorphismType;
 @Entity
 //@PrimaryKeyJoinColumn(name = "video_id")- WORKS WITH THE JOIN STRATEGY
 //@DiscriminatorValue("V") only with single table strategy
-@Polymorphism(type = PolymorphismType.EXPLICIT) //Exclude this sub class from being queried
+@Polymorphism(type = PolymorphismType.EXPLICIT) // Exclude this sub class from being queried
 public class Video extends Resource {
     private int length;
 }
